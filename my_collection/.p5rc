@@ -1,6 +1,8 @@
 {
   "name": "my_collection",
   "projects": [
-    "my_project"
+    "my_project",
+    "draw_an_ellipse",
+    "build_some_beautiful_things"
   ]
 }
