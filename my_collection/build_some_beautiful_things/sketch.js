@@ -21,7 +21,8 @@ function draw() {
 
 function forms() {
   for (let j = 0; j < n; j++) {
-    let x = random(width), y = random(height);
+    let x = random(width),
+      y = random(height);
     let s = random(20, 100);
     let hs = s / 2;
     let c = getCol();
@@ -58,13 +59,20 @@ function newParticles() {
 
 function keyPressed() {
   // 还没生效
-  if (keyCode === 's') {
+  if (keyCode === "s") {
     saveFrame("123.png");
   }
 }
 
 function getCol() {
-  let colors = ["#e4572e", "#29335c", "#f3a712", "#a8c686", "#669bbc", "#efc2f0"];
+  let colors = [
+    "#e4572e",
+    "#29335c",
+    "#f3a712",
+    "#a8c686",
+    "#669bbc",
+    "#efc2f0",
+  ];
   //let colors = ["#880D1E", "#DD2D4A", "#F26A8D", "#F49CBB", "#CBEEF3"];
   let idx = parseInt(random(colors.length));
   // console.log(idx + colors[idx]);
@@ -90,14 +98,16 @@ class Particle {
   }
 
   move() {
-    this.angle = noise(this.pos.x / this.noiseScale, this.pos.y / this.noiseScale) * this.noiseStrength;
+    this.angle =
+      noise(this.pos.x / this.noiseScale, this.pos.y / this.noiseScale) *
+      this.noiseStrength;
     this.pos.x += cos(this.angle) * this.step;
     this.pos.y += sin(this.angle) * this.step;
     this.lifeSpan -= 0.1;
   }
 
   isDead() {
-    return (this.lifeSpan < 0.0)
+    return this.lifeSpan < 0.0;
   }
 
   run() {

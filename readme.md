@@ -178,3 +178,16 @@ Unhandled promise rejections are deprecated. In the future, promise rejections t
 再查,就说是什么js异步的一些东西,可能是p5-manage的源码出了啥问题,之后issue,所以我转变方式,直接npm install p5,然后复制粘贴,success!
 
 ![下载](readme.assets/%E4%B8%8B%E8%BD%BD.png)
+
+## by 2020/10/13
+
+### **我发现把所有的学习过程写的代码全都写在my_collection里面,会使p5_server变得不好用,一次加载过程太长了**
+
+所以我就直接换成之前的embedding目录结构了
+
+![image-20201013181028735](readme.assets/image-20201013181028735.png)
+
+之后直接添加子目录就好了
+
+
+
