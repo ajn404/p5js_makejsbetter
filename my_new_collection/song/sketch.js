@@ -14,11 +14,8 @@ let song=[
 let trigger=0;
 let autoplay=false;
 let osc;
-
-
-
 function setup() {
-  createCanvas(innerWidth, innerHeight);
+  createCanvas(800 , 400);
   let div=createDiv("CLick to play notes or")
   div.id("instruction")
   let button =createButton("play song automatically")
