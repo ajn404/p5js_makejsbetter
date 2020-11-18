@@ -189,7 +189,9 @@ Unhandled promise rejections are deprecated. In the future, promise rejections t
 
 之后直接添加子目录就好了
 
+### by 2020/11/18
 
+p5js暂时告一段落，设计能力和创新思维等有时间了再去挖掘了
 
 
 
