@@ -2,7 +2,7 @@
 
 #### 使用p5-manager搭建p5项目?
 
-- 首先得nom install -g p5-manager
+- 首先得npm install -g p5-manager
 
 构建项目过程则是:
 
